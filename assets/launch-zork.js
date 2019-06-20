@@ -6,10 +6,10 @@ $.ajaxSetup({
     }
 });
 
-$.getScript('/assets/zm.js', function () {
+$.getScript('/Incident/assets/zm.js', function () {
     console.log('ZMachine Loaded...');
     const oReq = new XMLHttpRequest();
-    oReq.open('GET', '/assets/zork1.z3', true);
+    oReq.open('GET', '/Incident/assets/zork1.z3', true);
     oReq.responseType = 'arraybuffer';
     oReq.onload = function (_) {
         const zcode = oReq.response;
